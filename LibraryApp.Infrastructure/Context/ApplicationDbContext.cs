@@ -21,10 +21,13 @@ namespace LibraryApp.Infrastructure.Context
         public DbSet<Loan> Loans { get; set; }
         public DbSet<LoanStatus> LoanStatuses { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<BookLoan> BookLoans { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //book-author
             modelBuilder.Entity<BookAuthor>()
                 .HasKey(bc => new { bc.BookId, bc.AuthorId });
             modelBuilder.Entity<BookAuthor>()
@@ -35,6 +38,18 @@ namespace LibraryApp.Infrastructure.Context
                 .HasOne(bc => bc.Author)
                 .WithMany(c => c.BookAuthors)
                 .HasForeignKey(bc => bc.AuthorId);
+
+            //book-loan
+            modelBuilder.Entity<BookLoan>()
+               .HasKey(bc => new { bc.BookId, bc.LoanId });
+            modelBuilder.Entity<BookLoan>()
+                .HasOne(bc => bc.Book)
+                .WithMany(b => b.BookLoans)
+                .HasForeignKey(bc => bc.BookId);
+            modelBuilder.Entity<BookLoan>()
+                .HasOne(bc => bc.Loan)
+                .WithMany(c => c.BookLoans)
+                .HasForeignKey(bc => bc.LoanId);
         }
 
 

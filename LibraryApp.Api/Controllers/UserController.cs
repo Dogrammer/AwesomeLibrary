@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryApp.Core;
+using LibraryApp.Core.Uow;
+using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApp.Api.Controllers
 {
@@ -11,17 +15,106 @@ namespace LibraryApp.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        //[HttpGet]
-        //[Route("getUsers")]
-        //public async Task<IActionResult> GetUsers()
-        //{
-        //    var retVal = await _userService
-        //        .Queryable()
-        //        .AsNoTracking()
-        //        .Where(py => !py.IsDeleted && py.IsActive)
-        //        .ToList();
+        private readonly IUnitOfWork _uow;
+        private readonly IUserRepository _userRepository;
 
-        //    return Ok(Response.CreateResponse(retVal));
-        //}
+        public UserController(IUnitOfWork uow, IUserRepository userRepository)
+        {
+            _uow = uow;
+            _userRepository = userRepository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = _userRepository.Queryable().Include(x => x.Contacts).Where(x => !x.IsDeleted && x.IsActive).ToList();
+
+            return Ok(users);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> GetUser(long id)
+        {
+            var user = _userRepository.Queryable().Include(x => x.Contacts).FirstOrDefault(x => x.Id == id);
+            if (user != null)
+            {
+                return Ok(user);
+            }
+
+            return NotFound();
+        }
+
+        [HttpPost]
+        [Route("users")]
+        public async Task<IActionResult> AddUser(User user)
+        {
+
+            var newUser = new User
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                DateOfBirth = user.DateOfBirth,
+                Contacts = new List<Contact>(user.Contacts),
+                IsActive = true,
+                IsDeleted = false
+            };
+
+            _userRepository.Add(newUser);
+            await _uow.Save();
+            //var retVal = await _userService
+            //    .Queryable()
+            //    .AsNoTracking()
+            //    .Where(py => !py.IsDeleted && py.IsActive)
+            //    .ToList();
+
+
+            return Ok();
+        }
+
+        
+
+        [HttpPut]
+        [Route("editUser/{id}")]
+        public async Task<IActionResult> UpdateUser(long id, User user)
+        {
+            var existingUser = _userRepository.Queryable().Include(x => x.Contacts).FirstOrDefault(x => x.Id == id);
+
+            if(existingUser != null)
+            {
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.DateOfBirth = user.DateOfBirth;
+                existingUser.Contacts = user.Contacts;
+
+                await _uow.Save();
+
+                return Ok();
+            }
+
+            return BadRequest();
+
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> DeleteUser(long id)
+        {
+            var userToDelete = _userRepository.GetById(id);
+            
+            if (userToDelete != null)
+            {
+                //_userRepository.Remove(userToDelete);
+                userToDelete.IsActive = false;
+                userToDelete.IsDeleted = true;
+
+                await _uow.Save();
+
+                return NoContent();
+            }
+
+            return BadRequest();
+
+        }
     }
 }

@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LibraryApp.Model.Domain
 {
-    public class LoanStatus
+    public class LoanStatus : BaseEntity
     {
-        public long Id { get; set; }
         public string Name { get; set; }
 
     }

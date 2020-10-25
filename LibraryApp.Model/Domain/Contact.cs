@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LibraryApp.Model.Domain
 {
-    public class Contact
+    public class Contact : BaseEntity
     {
-        public long Id { get; set; }
         public string PhoneNumber { get; set; }
         public string MobileNumber { get; set; }
         public string EmailAddress { get; set; }

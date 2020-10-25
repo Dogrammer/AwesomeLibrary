@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LibraryApp.Model.Domain
 {
-    public class Author
+    public class Author : BaseEntity
     {
-        public long Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTimeOffset DateOfBirth { get; set; }

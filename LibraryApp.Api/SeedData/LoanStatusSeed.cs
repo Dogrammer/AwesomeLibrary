@@ -11,18 +11,18 @@ namespace LibraryApp.Api.SeedData
     {
         public static void SeedTestDataViaDbContext(ApplicationDbContext myDbContext)
         {
-            if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Normal"))
+            if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Loaned"))
             {
                 myDbContext.LoanStatuses.Add(new LoanStatus
                 {
-                    Name = "Normal",
+                    Name = "Loaned",
                 });
             }
-            if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Prolongated"))
+            if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Returned"))
             {
                 myDbContext.LoanStatuses.Add(new LoanStatus
                 {
-                    Name = "Prolongated",
+                    Name = "Returned",
                 });
 
             }

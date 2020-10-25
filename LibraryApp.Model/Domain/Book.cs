@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LibraryApp.Model.Domain
 {
-    public class Book
+    public class Book : BaseEntity
     {
-        public long Id { get; set; }
         public string Title { get; set; }
         public int YearPublished { get; set; }
 
@@ -14,6 +13,9 @@ namespace LibraryApp.Model.Domain
         public Library Library { get; set; }
 
         public ICollection<BookAuthor> BookAuthors { get; set; } = new HashSet<BookAuthor>();
+
+        public ICollection<BookLoan> BookLoans { get; set; } = new HashSet<BookLoan>();
+
 
 
     }

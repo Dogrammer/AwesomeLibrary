@@ -16,7 +16,8 @@ namespace LibraryApp.Api.SeedData
                 myDbContext.BookInventories.Add(new BookInventory
                 {
                     BookId = 1,
-                    Quantity = 10
+                    Quantity = 10,
+                    CurrentQuantity = 10
                 });
 
                 myDbContext.SaveChanges();
