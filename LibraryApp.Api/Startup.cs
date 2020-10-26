@@ -42,6 +42,7 @@ namespace LibraryApp.Api
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<ILoanRepository, LoanRepository>();
             services.AddTransient<IBookInventoryRepository, BookInventoryRepository>();
+            services.AddTransient<IBookRepository, BookRepository>();
 
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();

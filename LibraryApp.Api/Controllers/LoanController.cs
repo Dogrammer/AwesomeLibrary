@@ -9,6 +9,7 @@ using LibraryApp.Core.Uow;
 using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryApp.Api.Controllers
 {
@@ -25,6 +26,19 @@ namespace LibraryApp.Api.Controllers
             _loanRepository = loanRepository;
             _bookInventoryRepository = bookInventoryRepository;
             _uow = unitOfWork;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLoans()
+        {
+            var loans = _loanRepository
+                .Queryable()
+                .Include(x => x.User)
+                .Include(x => x.LoanStatus)
+                .Include(x => x.BookLoans)
+                .Where(x => !x.IsDeleted && x.IsActive).ToList();
+
+            return Ok(loans);
         }
 
         [HttpPost]
@@ -44,7 +58,9 @@ namespace LibraryApp.Api.Controllers
                         DateDue = request.DateDue,
                         DateLoaned = request.DateLoaned,
                         UserId = request.UserId,
-                        LoanStatusId = request.LoanStatusId
+                        IsActive = true,
+                        IsDeleted = false,
+                        LoanStatusId = 3 // loaned
                     };
 
                     foreach (var lb in request.LoanBookRequests)
@@ -72,7 +88,7 @@ namespace LibraryApp.Api.Controllers
             return BadRequest();
         }
 
-        [HttpPut]
+        [HttpGet]
         [Route("returnLoan/{loanId}")]
         public async Task<IActionResult> ReturnLoan(long loanId)
         {

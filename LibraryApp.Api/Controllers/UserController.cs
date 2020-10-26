@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryApp.Api.ApiHelpers.Pagination;
 using LibraryApp.Core;
+using LibraryApp.Core.RequestModels.User;
 using LibraryApp.Core.Uow;
 using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
@@ -24,14 +26,28 @@ namespace LibraryApp.Api.Controllers
             _userRepository = userRepository;
         }
 
+        //[HttpGet]
+        //public async Task<IActionResult> GetAllUsers([FromQuery]UserParams userParams)
+        //{
+        //    var usersQuery = _userRepository.Queryable().Include(x => x.Contacts).Where(x => !x.IsDeleted && x.IsActive);
+
+        //    var users = await PagedList<User>.CreateAsync(usersQuery, userParams.PageNumber, userParams.PageSize);
+        //    Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
+
+        //    return Ok(users);
+        //}
+
+
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
             var users = _userRepository.Queryable().Include(x => x.Contacts).Where(x => !x.IsDeleted && x.IsActive).ToList();
 
+            //var users = await PagedList<User>.CreateAsync(usersQuery, userParams.PageNumber, userParams.PageSize);
+            //Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
+
             return Ok(users);
         }
-
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetUser(long id)
