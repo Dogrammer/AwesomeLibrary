@@ -2,6 +2,7 @@
 using LibraryApp.Model.Domain;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LibraryApp.Core
@@ -13,9 +14,12 @@ namespace LibraryApp.Core
         {
             _dbContext = context;
         }
-        public IEnumerable<User> GetOverdueUsers()
+
+        public IQueryable<User> SearchByLastName(IQueryable<User> query, string lastNameValue)
         {
-            throw new NotImplementedException();
+            var searchNameQuery = query.Where(x => x.LastName.ToLower().Contains(lastNameValue.Trim().ToLower()));
+
+            return searchNameQuery;
         }
     }
 }

@@ -45,10 +45,10 @@ namespace LibraryApp.Api.Controllers
                 usersQuery = usersQuery.OrderBy(x => x.LastName);
             }
 
-            //usersQuery = userParams.OrderBy switch
-            //{
-            //    "overdue_desc" => usersQuery.SelectMany(x => x.Loans).Select(x => x.use)
-            //}
+            if (!string.IsNullOrEmpty(userParams.SearchLastName))
+            {
+                usersQuery = _userRepository.SearchByLastName(usersQuery, userParams.SearchLastName);
+            }
 
             var users = await PagedList<User>.CreateAsync(usersQuery, userParams.PageNumber, userParams.PageSize);
             Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);

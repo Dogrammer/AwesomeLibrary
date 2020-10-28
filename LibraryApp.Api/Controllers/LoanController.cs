@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryApp.Api.ApiHelpers.Pagination;
 using LibraryApp.Core;
 using LibraryApp.Core.Contracts;
 using LibraryApp.Core.RequestModels;
+using LibraryApp.Core.RequestModels.LoanRequest;
 using LibraryApp.Core.Uow;
 using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
@@ -35,14 +37,22 @@ namespace LibraryApp.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetLoans()
+        public async Task<IActionResult> GetLoans([FromQuery]LoanParams loanParams)
         {
-            var loans = _loanRepository
+            var loansQuery = _loanRepository
                 .Queryable()
                 .Include(x => x.User)
                 .Include(x => x.LoanStatus)
                 .Include(x => x.BookLoans).ThenInclude(xy => xy.Book)
-                .Where(x => !x.IsDeleted && x.IsActive).ToList();
+                .Where(x => !x.IsDeleted && x.IsActive);
+
+            if (loanParams.UserId > 0)
+            {
+                loansQuery = loansQuery.Where(x => x.UserId == loanParams.UserId);
+            }
+
+            var loans = await PagedList<Loan>.CreateAsync(loansQuery, loanParams.PageNumber, loanParams.PageSize);
+            Response.AddPaginationHeader(loans.CurrentPage, loans.PageSize, loans.TotalCount, loans.TotalPages);
 
             return Ok(loans);
         }
