@@ -16,6 +16,8 @@ namespace LibraryApp.Model.Domain
 
         public ICollection<BookLoan> BookLoans { get; set; } = new HashSet<BookLoan>();
 
+        public int Overdue { get; set; }
+
 
 
     }

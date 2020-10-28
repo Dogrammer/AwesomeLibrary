@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LibraryApp.Core\LibraryApp.Core.csproj" />
     <ProjectReference Include="..\LibraryApp.Infrastructure\LibraryApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\Recognizer.Manager\Recognizer.Manager.csproj" />
   </ItemGroup>
 
 

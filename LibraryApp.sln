@@ -9,7 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.Model", "Library
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.Infrastructure", "LibraryApp.Infrastructure\LibraryApp.Infrastructure.csproj", "{CA0E9824-9BF7-4319-96D9-7285EAB0BB85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApp.Core", "LibraryApp.Core\LibraryApp.Core.csproj", "{BCB2FF27-CB94-4E37-9593-4C31B6CDA984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp.Core", "LibraryApp.Core\LibraryApp.Core.csproj", "{BCB2FF27-CB94-4E37-9593-4C31B6CDA984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{2D3125C3-09F5-47C4-9069-25BB20047092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recognizer", "Recognizer", "{18D2B185-579F-43A7-8FC7-E20D0524E050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recognizer.Adapter", "Recognizer.Adapter\Recognizer.Adapter.csproj", "{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recognizer.Manager", "Recognizer.Manager\Recognizer.Manager.csproj", "{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recognizer.Adapter.Infrastructure", "Recognizer.Adapter.Infrastructure\Recognizer.Adapter.Infrastructure.csproj", "{3B20582D-09DE-49DA-B46B-686D4725348B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,27 @@ Global
 		{BCB2FF27-CB94-4E37-9593-4C31B6CDA984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB2FF27-CB94-4E37-9593-4C31B6CDA984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB2FF27-CB94-4E37-9593-4C31B6CDA984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B20582D-09DE-49DA-B46B-686D4725348B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B20582D-09DE-49DA-B46B-686D4725348B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B20582D-09DE-49DA-B46B-686D4725348B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B20582D-09DE-49DA-B46B-686D4725348B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18D2B185-579F-43A7-8FC7-E20D0524E050} = {2D3125C3-09F5-47C4-9069-25BB20047092}
+		{3DB9350E-38DF-46A3-A20A-9EFC8DED43FF} = {18D2B185-579F-43A7-8FC7-E20D0524E050}
+		{98A63E2A-C5A3-4DC6-9F49-44B7C95BEB46} = {18D2B185-579F-43A7-8FC7-E20D0524E050}
+		{3B20582D-09DE-49DA-B46B-686D4725348B} = {18D2B185-579F-43A7-8FC7-E20D0524E050}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C7A27CA-BA4A-4E64-B94A-FB94155EBE78}

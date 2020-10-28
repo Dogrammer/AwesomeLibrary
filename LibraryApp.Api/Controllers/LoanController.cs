@@ -20,12 +20,18 @@ namespace LibraryApp.Api.Controllers
         private readonly ILoanRepository _loanRepository;
         private readonly IBookInventoryRepository _bookInventoryRepository;
         private readonly IUnitOfWork _uow;
+        private readonly IUserRepository _userRepository;
 
-        public LoanController(ILoanRepository loanRepository, IBookInventoryRepository bookInventoryRepository, IUnitOfWork unitOfWork)
+        public LoanController(
+            ILoanRepository loanRepository,
+            IBookInventoryRepository bookInventoryRepository, 
+            IUnitOfWork unitOfWork,
+            IUserRepository userRepository)
         {
             _loanRepository = loanRepository;
             _bookInventoryRepository = bookInventoryRepository;
             _uow = unitOfWork;
+            _userRepository = userRepository;
         }
 
         [HttpGet]
@@ -35,8 +41,22 @@ namespace LibraryApp.Api.Controllers
                 .Queryable()
                 .Include(x => x.User)
                 .Include(x => x.LoanStatus)
-                .Include(x => x.BookLoans)
+                .Include(x => x.BookLoans).ThenInclude(xy => xy.Book)
                 .Where(x => !x.IsDeleted && x.IsActive).ToList();
+
+            return Ok(loans);
+        }
+
+        [HttpGet]
+        [Route("{userId}")]
+        public async Task<IActionResult> GetLoansForUser(long userId)
+        {
+            var loans = _loanRepository
+                .Queryable()
+                .Include(x => x.User)
+                .Include(x => x.LoanStatus)
+                .Include(x => x.BookLoans).ThenInclude(xy => xy.Book)
+                .Where(x => !x.IsDeleted && x.IsActive && x.UserId == userId).ToList();
 
             return Ok(loans);
         }
@@ -98,6 +118,20 @@ namespace LibraryApp.Api.Controllers
             {
                 loan.DateReturned = DateTimeOffset.UtcNow;
                 loan.LoanStatusId = 4;
+
+                if ((loan.DateReturned.Value - loan.DateDue).TotalDays > 0)
+                {
+                    loan.Overdue = (int)(DateTimeOffset.UtcNow - loan.DateDue).TotalDays;
+
+                    //get user and update total overdue
+                    var user = _userRepository.Queryable().FirstOrDefault(x => x.Id == loan.UserId);
+                    user.TotalOverdue += loan.Overdue;
+
+                }
+                else
+                {
+                    loan.Overdue = 0;
+                }
 
                 //dohvati loanbook quantity
                 var bookLoans = _loanRepository.Queryable().SelectMany(x => x.BookLoans).Where(x => x.LoanId == loanId).ToList();

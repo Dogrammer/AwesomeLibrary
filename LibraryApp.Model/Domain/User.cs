@@ -8,8 +8,10 @@ namespace LibraryApp.Model.Domain
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public virtual ICollection<Loan> Loans { get; set; }
         public DateTime DateOfBirth { get; set; }
         public virtual ICollection<Contact> Contacts { get; set; }
+        public int TotalOverdue { get; set; }
 
     }
 }

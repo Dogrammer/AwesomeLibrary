@@ -16,6 +16,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Recognizer.Adapter.RecognizerAdapterService;
+using Recognizer.Manager;
 
 namespace LibraryApp.Api
 {
@@ -43,7 +45,11 @@ namespace LibraryApp.Api
             services.AddTransient<ILoanRepository, LoanRepository>();
             services.AddTransient<IBookInventoryRepository, BookInventoryRepository>();
             services.AddTransient<IBookRepository, BookRepository>();
-
+            
+            //intergration services
+            services.AddTransient<IRecognizerManager, RecognizerManager>();
+            services.AddTransient<IRecognizerAdapterService, RecognizerAdapterService>();
+            services.Configure<RecognizerSettings>(Configuration.GetSection(nameof(RecognizerSettings)));
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             //services.AddTransient<ICustomerRepository, CustomerRepository>();
