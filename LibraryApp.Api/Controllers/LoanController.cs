@@ -51,6 +51,7 @@ namespace LibraryApp.Api.Controllers
                 loansQuery = loansQuery.Where(x => x.UserId == loanParams.UserId);
             }
 
+            // pagination 
             var loans = await PagedList<Loan>.CreateAsync(loansQuery, loanParams.PageNumber, loanParams.PageSize);
             Response.AddPaginationHeader(loans.CurrentPage, loans.PageSize, loans.TotalCount, loans.TotalPages);
 

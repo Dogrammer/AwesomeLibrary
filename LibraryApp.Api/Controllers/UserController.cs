@@ -55,18 +55,7 @@ namespace LibraryApp.Api.Controllers
 
             return Ok(users);
         }
-
-
-        //[HttpGet]
-        //public async Task<IActionResult> GetAllUsers()
-        //{
-        //    var users = _userRepository.Queryable().Include(x => x.Contacts).Where(x => !x.IsDeleted && x.IsActive).ToList();
-
-        //    //var users = await PagedList<User>.CreateAsync(usersQuery, userParams.PageNumber, userParams.PageSize);
-        //    //Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
-
-        //    return Ok(users);
-        //}
+        
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetUser(long id)
@@ -87,49 +76,34 @@ namespace LibraryApp.Api.Controllers
             if (request.File.Length > 0)
             {
                 string base64string;
+
+                // convert image from fileform to base64string format
                 using (var ms = new MemoryStream())
                 {
                     request.File.CopyTo(ms);
                     var filebytes = ms.ToArray();
                     base64string = Convert.ToBase64String(filebytes);
-
-                    //send this to method which will create request for integration
                 }
 
-                var test = _recognizerManager.PostData(base64string);
-                var user = test.Result;
+                // send base64string to recognizer manager for further operations
+                var populatedUserObject = _recognizerManager.PostData(base64string);
+                if (!populatedUserObject.IsCompletedSuccessfully)
+                {
+                    return BadRequest("Failed");
+                }
+                var user = populatedUserObject.Result;
+
+                // deserialize contacts because couldn't send array of objects into fileform format
                 if (!string.IsNullOrEmpty(request.Contacts))
                 {
                     user.Contacts = JsonConvert.DeserializeObject<IList<Contact>>(request.Contacts);
                 }
 
-                //user.Contacts = request.Contacts;
                 _userRepository.Add(user);
                 await _uow.Save();
 
                 return Ok(user);
-
             }
-
-            //prima sliku i kontakte 
-            //var newUser = new User
-            //{
-            //    FirstName = user.FirstName,
-            //    LastName = user.LastName,
-            //    DateOfBirth = user.DateOfBirth,
-            //    Contacts = new List<Contact>(user.Contacts),
-            //    IsActive = true,
-            //    IsDeleted = false
-            //};
-
-            //_userRepository.Add(newUser);
-            //await _uow.Save();
-            //var retVal = await _userService
-            //    .Queryable()
-            //    .AsNoTracking()
-            //    .Where(py => !py.IsDeleted && py.IsActive)
-            //    .ToList();
-
 
             return BadRequest();
         }
@@ -144,6 +118,7 @@ namespace LibraryApp.Api.Controllers
 
             if(existingUser != null)
             {
+                // populate existing object with new data
                 existingUser.FirstName = user.FirstName;
                 existingUser.LastName = user.LastName;
                 existingUser.DateOfBirth = user.DateOfBirth;
@@ -166,7 +141,6 @@ namespace LibraryApp.Api.Controllers
             
             if (userToDelete != null)
             {
-                //_userRepository.Remove(userToDelete);
                 userToDelete.IsActive = false;
                 userToDelete.IsDeleted = true;
 
