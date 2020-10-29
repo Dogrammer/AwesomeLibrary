@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using LibraryApp.Api.ApiHelpers.Pagination;
 using LibraryApp.Core;
@@ -8,10 +9,13 @@ using LibraryApp.Core.Contracts;
 using LibraryApp.Core.RequestModels;
 using LibraryApp.Core.RequestModels.LoanRequest;
 using LibraryApp.Core.Uow;
+using LibraryApp.Infrastructure.ApiModel;
+using LibraryApp.Infrastructure.Localization;
 using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 
 namespace LibraryApp.Api.Controllers
 {
@@ -19,19 +23,24 @@ namespace LibraryApp.Api.Controllers
     [ApiController]
     public class LoanController : ControllerBase
     {
+
+
         private readonly ILoanRepository _loanRepository;
         private readonly IBookInventoryRepository _bookInventoryRepository;
+        private readonly IStringLocalizer<LocalizationResources> _localizer;
         private readonly IUnitOfWork _uow;
         private readonly IUserRepository _userRepository;
 
         public LoanController(
             ILoanRepository loanRepository,
-            IBookInventoryRepository bookInventoryRepository, 
+            IBookInventoryRepository bookInventoryRepository,
+            IStringLocalizer<LocalizationResources> localizer,
             IUnitOfWork unitOfWork,
             IUserRepository userRepository)
         {
             _loanRepository = loanRepository;
             _bookInventoryRepository = bookInventoryRepository;
+            _localizer = localizer;
             _uow = unitOfWork;
             _userRepository = userRepository;
         }
@@ -55,6 +64,7 @@ namespace LibraryApp.Api.Controllers
             var loans = await PagedList<Loan>.CreateAsync(loansQuery, loanParams.PageNumber, loanParams.PageSize);
             Response.AddPaginationHeader(loans.CurrentPage, loans.PageSize, loans.TotalCount, loans.TotalPages);
 
+            //return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, loans));
             return Ok(loans);
         }
 
@@ -69,7 +79,7 @@ namespace LibraryApp.Api.Controllers
                 .Include(x => x.BookLoans).ThenInclude(xy => xy.Book)
                 .Where(x => !x.IsDeleted && x.IsActive && x.UserId == userId).ToList();
 
-            return Ok(loans);
+            return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, loans));
         }
 
         [HttpPost]
@@ -110,13 +120,16 @@ namespace LibraryApp.Api.Controllers
                     await _uow.Save();
 
 
-                    return Ok();
+                    return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, _localizer[LocalizationResources.AddedNewLoan]));
                 }
+                // in future should return which book is not available... 'CheckInventoryResponse' will be responsible for that
+                // for now it's just basic response message
+                return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.BooksAreNotAvailable]));
 
-                return BadRequest(checkInventory);
             }
 
-            return BadRequest();
+            return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest));
+
         }
 
         [HttpGet]
@@ -148,10 +161,10 @@ namespace LibraryApp.Api.Controllers
                 var bookLoans = _loanRepository.Queryable().SelectMany(x => x.BookLoans).Where(x => x.LoanId == loanId).ToList();
                 _bookInventoryRepository.UpdateBookInventoryAfterReturn(bookLoans);
                 await _uow.Save();
-                return Ok();
+                return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
-            return BadRequest();
+            return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.SpecificLoanNotFound]));
         }
 
 

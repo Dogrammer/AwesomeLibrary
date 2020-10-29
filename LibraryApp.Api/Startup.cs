@@ -1,15 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using LibraryApp.Core;
 using LibraryApp.Core.Contracts;
 using LibraryApp.Core.Implementations;
 using LibraryApp.Core.Uow;
 using LibraryApp.Infrastructure.Context;
+using LibraryApp.Infrastructure.Localization;
+using LibraryApp.Infrastructure.MIddlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,9 +38,27 @@ namespace LibraryApp.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            //    .AddDataAnnotationsLocalization(options =>
+            //    {
+            //        options.DataAnnotationLocalizerProvider = (type, factory) =>
+            //        {
+            //            var assemblyName = new AssemblyName(typeof(LocalizationResources).GetTypeInfo().Assembly.FullName);
+            //            return factory.Create(nameof(LocalizationResources), assemblyName.Name);
+            //        };
+            //    });
             services.AddControllers().AddNewtonsoftJson(options =>
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                    );
+                    ).SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+                     .AddDataAnnotationsLocalization(options =>
+                     {
+                         options.DataAnnotationLocalizerProvider = (type, factory) =>
+                         {
+                             var assemblyName = new AssemblyName(typeof(LocalizationResources).GetTypeInfo().Assembly.FullName);
+                             return factory.Create(nameof(LocalizationResources), assemblyName.Name);
+                         };
+                     });
 
             services.AddCors();
 
@@ -59,11 +82,26 @@ namespace LibraryApp.Api
                     .UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                     opt => opt.MigrationsAssembly("LibraryApp.Infrastructure"))
                );
+
+            services.Configure<RequestLocalizationOptions>(
+                options =>
+                {
+                    var supportedCultures = new List<CultureInfo>
+                        {
+                            new CultureInfo("hr-HR"),
+
+                        };
+
+                    options.DefaultRequestCulture = new RequestCulture(culture: "hr-HR", uiCulture: "hr-HR");
+                    options.SupportedCultures = supportedCultures;
+                    options.SupportedUICultures = supportedCultures;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseExceptionMiddleware();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

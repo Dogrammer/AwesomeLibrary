@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using LibraryApp.Api.ApiHelpers.Pagination;
 using LibraryApp.Core;
 using LibraryApp.Core.RequestModels.User;
 using LibraryApp.Core.Uow;
+using LibraryApp.Infrastructure.ApiModel;
+using LibraryApp.Infrastructure.Localization;
 using LibraryApp.Model.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 using Newtonsoft.Json;
 using Recognizer.Manager;
 
@@ -23,12 +27,19 @@ namespace LibraryApp.Api.Controllers
         private readonly IUnitOfWork _uow;
         private readonly IUserRepository _userRepository;
         private readonly IRecognizerManager _recognizerManager;
+        private readonly IStringLocalizer<LocalizationResources> _localizer;
 
-        public UserController(IUnitOfWork uow, IUserRepository userRepository, IRecognizerManager recognizerManager)
+        public UserController(
+            IUnitOfWork uow,
+            IUserRepository userRepository,
+            IRecognizerManager recognizerManager,
+            IStringLocalizer<LocalizationResources> localizer
+            )
         {
             _uow = uow;
             _userRepository = userRepository;
             _recognizerManager = recognizerManager;
+            _localizer = localizer;
         }
 
         [HttpGet]
@@ -54,8 +65,12 @@ namespace LibraryApp.Api.Controllers
             Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
 
             return Ok(users);
+            //return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, users));
+
+
+
         }
-        
+
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetUser(long id)
@@ -63,10 +78,11 @@ namespace LibraryApp.Api.Controllers
             var user = _userRepository.Queryable().Include(x => x.Contacts).FirstOrDefault(x => x.Id == id);
             if (user != null)
             {
-                return Ok(user);
+                return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, user));
             }
 
-            return NotFound();
+            return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.SpecificUserNotFound]));
+
         }
 
         [HttpPost]
@@ -86,26 +102,25 @@ namespace LibraryApp.Api.Controllers
                 }
 
                 // send base64string to recognizer manager for further operations
-                var populatedUserObject = _recognizerManager.PostData(base64string);
-                if (!populatedUserObject.IsCompletedSuccessfully)
+                var populatedUserObject = await _recognizerManager.PostData(base64string);
+                if (populatedUserObject == null)
                 {
-                    return BadRequest("Failed");
+                    return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.FileIsEmpty]));
                 }
-                var user = populatedUserObject.Result;
-
+                
                 // deserialize contacts because couldn't send array of objects into fileform format
                 if (!string.IsNullOrEmpty(request.Contacts))
                 {
-                    user.Contacts = JsonConvert.DeserializeObject<IList<Contact>>(request.Contacts);
+                    populatedUserObject.Contacts = JsonConvert.DeserializeObject<IList<Contact>>(request.Contacts);
                 }
 
-                _userRepository.Add(user);
+                _userRepository.Add(populatedUserObject);
                 await _uow.Save();
 
-                return Ok(user);
+                return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
-            return BadRequest();
+            return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.ImageParserFailed]));
         }
 
         
@@ -126,10 +141,10 @@ namespace LibraryApp.Api.Controllers
 
                 await _uow.Save();
 
-                return Ok();
+                return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
-            return BadRequest();
+            return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.SpecificUserNotFound]));
 
         }
 
@@ -146,10 +161,10 @@ namespace LibraryApp.Api.Controllers
 
                 await _uow.Save();
 
-                return NoContent();
+                return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
-            return BadRequest();
+            return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.SpecificUserNotFound]));
 
         }
     }
