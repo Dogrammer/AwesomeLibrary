@@ -23,6 +23,18 @@ namespace LibraryApp.Api.SeedData
                 myDbContext.SaveChanges();
             }
 
+            if (!myDbContext.BookInventories.Any(lt => lt.BookId == 2))
+            {
+                myDbContext.BookInventories.Add(new BookInventory
+                {
+                    BookId = 2,
+                    Quantity = 10,
+                    CurrentQuantity = 10
+                });
+
+                myDbContext.SaveChanges();
+            }
+
         }
     }
 }

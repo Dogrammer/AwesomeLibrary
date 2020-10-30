@@ -24,23 +24,8 @@ namespace LibraryApp.Api.SeedData
                         LibraryId = 1,
                         YearPublished = 2000
                     };
-
-                    //var author1 = new Author
-                    //{
-                    //    Id = 1,
-                    //    DateOfBirth = DateTime.Now,
-                    //    FirstName = "J.K.",
-                    //    LastName = "Rowling",
-                    //    DateOfDeath = DateTime.Now
-                    //};
+                    
                     myDbContext.Books.Add(book1);
-                    //myDbContext.Authors.Add(author1);
-                    //myDbContext.BookAuthors.Add(new BookAuthor
-                    //{
-                    //    AuthorId = 1,
-                    //    BookId = 1
-                    //});
-                   
                     myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.Books ON;");
                     myDbContext.SaveChanges();
                     myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.Books OFF;");

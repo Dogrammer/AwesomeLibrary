@@ -101,7 +101,7 @@ namespace LibraryApp.Api.Controllers
                         UserId = request.UserId,
                         IsActive = true,
                         IsDeleted = false,
-                        LoanStatusId = 3 // loaned
+                        LoanStatusId = 1 // loaned
                     };
 
                     foreach (var lb in request.LoanBookRequests)
@@ -141,7 +141,7 @@ namespace LibraryApp.Api.Controllers
             if (loan != null)
             {
                 loan.DateReturned = DateTimeOffset.UtcNow;
-                loan.LoanStatusId = 4;
+                loan.LoanStatusId = 2;
 
                 if ((loan.DateReturned.Value - loan.DateDue).TotalDays > 0)
                 {

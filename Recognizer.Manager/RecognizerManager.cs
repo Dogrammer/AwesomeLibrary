@@ -23,7 +23,7 @@ namespace Recognizer.Manager
         public async Task<User> PostData(string base64String)
         {
             var newUser = new User();
-            //tu puni Recognizer request i šalji na adapter i vrati nazad response
+            newUser.IsValid = false;
 
             // populate request for microblink cloud API
             var request = new RecognizerRequest()
@@ -58,12 +58,11 @@ namespace Recognizer.Manager
                 newUser.LastName = parsed.LastName;
                 newUser.IsActive = true;
                 newUser.IsDeleted = false;
-            }
-            //tu ide sva logika oko validacije itd
+                newUser.IsValid = true;
 
+            }
 
             return newUser;
-        
         }
     }
 }

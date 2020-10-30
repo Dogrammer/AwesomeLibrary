@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Infrastructure.Context;
 using LibraryApp.Model.Domain;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,21 +14,52 @@ namespace LibraryApp.Api.SeedData
         {
             if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Loaned"))
             {
-                myDbContext.LoanStatuses.Add(new LoanStatus
+
+                using (var transaction = myDbContext.Database.BeginTransaction())
                 {
-                    Name = "Loaned",
-                });
+                    var loanStatus1 = new LoanStatus
+                    {
+                        Id = 1,
+                        Name = "Loaned",
+                        IsActive = true,
+                        IsDeleted = false
+                    };
+
+
+                    myDbContext.LoanStatuses.Add(loanStatus1);
+                    myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.LoanStatuses ON;");
+                    myDbContext.SaveChanges();
+                    myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.LoanStatuses OFF;");
+                    transaction.Commit();
+                }
+
             }
+
             if (!myDbContext.LoanStatuses.Any(lt => lt.Name == "Returned"))
             {
-                myDbContext.LoanStatuses.Add(new LoanStatus
+
+                using (var transaction = myDbContext.Database.BeginTransaction())
                 {
-                    Name = "Returned",
-                });
+
+                    var loanStatus2 = new LoanStatus
+                    {
+                        Id = 2,
+                        Name = "Returned",
+                        IsActive = true,
+                        IsDeleted = false
+                    };
+
+                    myDbContext.LoanStatuses.Add(loanStatus2);
+
+                    myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.LoanStatuses ON;");
+                    myDbContext.SaveChanges();
+                    myDbContext.Database.ExecuteSqlCommand("SET IDENTITY_INSERT LibraryApp.dbo.LoanStatuses OFF;");
+                    transaction.Commit();
+                }
 
             }
+           
 
-            myDbContext.SaveChanges();
         }
     }
 }
