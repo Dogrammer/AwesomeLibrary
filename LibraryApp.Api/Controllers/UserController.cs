@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using Newtonsoft.Json;
 using Recognizer.Manager;
+using Serilog;
 
 namespace LibraryApp.Api.Controllers
 {
@@ -64,8 +65,10 @@ namespace LibraryApp.Api.Controllers
             var users = await PagedList<User>.CreateAsync(usersQuery, userParams.PageNumber, userParams.PageSize);
             Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
 
+            
+
             return Ok(users);
-            //return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, users));
+            
 
 
 
@@ -80,7 +83,7 @@ namespace LibraryApp.Api.Controllers
             {
                 return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, user));
             }
-
+            Log.Error("Specific User Not Found" + DateTime.UtcNow.ToString());
             return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.SpecificUserNotFound]));
 
         }
@@ -103,9 +106,15 @@ namespace LibraryApp.Api.Controllers
 
                 // send base64string to recognizer manager for further operations
                 var populatedUserObject = await _recognizerManager.PostData(base64string);
+                
                 if (populatedUserObject == null)
                 {
                     return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.FileIsEmpty]));
+                }
+
+                if (!populatedUserObject.IsValid)
+                {
+                    Log.Information("Image recognition not valid");
                 }
                 
                 // deserialize contacts because couldn't send array of objects into fileform format
@@ -120,6 +129,7 @@ namespace LibraryApp.Api.Controllers
                 return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
+            Log.Information("BadRequest" + DateTime.UtcNow.ToString());
             return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.ImageParserFailed]));
         }
 
@@ -143,7 +153,7 @@ namespace LibraryApp.Api.Controllers
 
                 return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
-
+            Log.Information("BadRequest" + DateTime.UtcNow.ToString());
             return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.SpecificUserNotFound]));
 
         }
@@ -163,7 +173,7 @@ namespace LibraryApp.Api.Controllers
 
                 return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
-
+            Log.Information("BadRequest" + DateTime.UtcNow.ToString());
             return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest, _localizer[LocalizationResources.SpecificUserNotFound]));
 
         }

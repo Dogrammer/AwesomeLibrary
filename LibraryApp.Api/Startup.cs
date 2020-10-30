@@ -23,6 +23,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Recognizer.Adapter.RecognizerAdapterService;
 using Recognizer.Manager;
+using Serilog;
 
 namespace LibraryApp.Api
 {
@@ -39,15 +40,7 @@ namespace LibraryApp.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-            //    .AddDataAnnotationsLocalization(options =>
-            //    {
-            //        options.DataAnnotationLocalizerProvider = (type, factory) =>
-            //        {
-            //            var assemblyName = new AssemblyName(typeof(LocalizationResources).GetTypeInfo().Assembly.FullName);
-            //            return factory.Create(nameof(LocalizationResources), assemblyName.Name);
-            //        };
-            //    });
+            
             services.AddControllers().AddNewtonsoftJson(options =>
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     ).SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
@@ -106,6 +99,8 @@ namespace LibraryApp.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSerilogRequestLogging();
 
             app.UseHttpsRedirection();
 

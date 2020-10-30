@@ -22,40 +22,14 @@ namespace Recognizer.Adapter.RecognizerAdapterService
 
         public async Task<RecognizerResponse> PostDataToRecognizerAPI(RecognizerRequest request)
         {
-            // Test URI for OKP service
-            //var url = _okpSettings.OKPTestUri;
-            //MockyResponse mockyResponse = null;
-
             StringContent jsonContent = SerializeObject(request);
 
-            var test23 = jsonContent.ReadAsStringAsync();
-
-
-            //HttpResponseMessage response = await client.GetAsync(_mockySettings.MockyUri);
-            //client.DefaultRequestHeaders.Authorization =
-            //    new AuthenticationHeaderValue("Bearer", "Zjc1OWQ1NjM2NTMxNDVlYmFlZTZmMGU1NGJiYWQ4NWQ6N2FiNDZiYmItMDQ3ZS00MTM3LWFjNWYtM2I0ZGQ5ZWRjM2Q3");
-            //HttpResponseMessage response = await client.PostAsync("https://api.microblink.com/v1/recognizers/mrtd", jsonContent);
             client.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", _recognizerSettings.AuthHeader);
 
             HttpResponseMessage response = await client.PostAsync(_recognizerSettings.RecognizerUrl, jsonContent);
 
             var gotovo = DeserializeObject(response);
-            //var adjdevise = gotovo.
-
-
-            //response.EnsureSuccessStatusCode();
-            //string responseBody = await response.Content.ReadAsStringAsync();
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    mockyResponse = JsonConvert.DeserializeObject<MockyResponse>(responseBody);
-            //}
-
-            //mockyResponse.HttpResponse = "StatusCode = " + response.StatusCode.ToString() +
-            //                             ", ReasonPhrase = " + response.ReasonPhrase.ToString() +
-            //                             ", Headers = " + response.Headers.ToString();
-
-
 
             return await gotovo;
 

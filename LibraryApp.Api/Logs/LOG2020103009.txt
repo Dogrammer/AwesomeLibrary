@@ -1,0 +1,1293 @@
+2020-10-30 09:00:06.872 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-10-30 09:00:07.716 +01:00 [DBG] The index {'BookId'} was not created on entity type 'BookAuthor' as the properties are already covered by the index {'BookId', 'AuthorId'}.
+2020-10-30 09:00:07.720 +01:00 [DBG] The index {'BookId'} was not created on entity type 'BookLoan' as the properties are already covered by the index {'BookId', 'LoanId'}.
+2020-10-30 09:00:07.958 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:00:08.040 +01:00 [DBG] Migrating using database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.070 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.465 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.479 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2020-10-30 09:00:08.490 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (11ms).
+2020-10-30 09:00:08.505 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2020-10-30 09:00:08.537 +01:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2020-10-30 09:00:08.543 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.550 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.555 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2020-10-30 09:00:08.557 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2020-10-30 09:00:08.559 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.562 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.563 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-10-30 09:00:08.586 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-10-30 09:00:08.589 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.593 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.598 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.600 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.602 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2020-10-30 09:00:08.606 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (4ms).
+2020-10-30 09:00:08.611 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2020-10-30 09:00:08.616 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2020-10-30 09:00:08.618 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.622 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.627 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2020-10-30 09:00:08.630 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2020-10-30 09:00:08.631 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.633 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.637 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-10-30 09:00:08.641 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-10-30 09:00:08.646 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.650 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.667 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:08.670 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-10-30 09:00:08.672 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.675 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.680 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2020-10-30 09:00:08.686 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2020-10-30 09:00:08.699 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:08.700 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.701 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:08.722 +01:00 [INF] No migrations were applied. The database is already up to date.
+2020-10-30 09:00:08.964 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:08.994 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:08.996 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-10-30 09:00:08.998 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.000 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.001 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Libraries] AS [l]
+        WHERE [l].[Name] = N'AwesomeLibrary') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.010 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Libraries] AS [l]
+        WHERE [l].[Name] = N'AwesomeLibrary') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.021 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.024 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.027 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.035 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.041 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.045 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2020-10-30 09:00:09.047 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.050 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.052 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Books] AS [b]
+        WHERE [b].[Title] = N'Harry Potter 1') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.062 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Books] AS [b]
+        WHERE [b].[Title] = N'Harry Potter 1') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.069 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.071 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.075 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.083 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.089 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.090 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2020-10-30 09:00:09.095 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.097 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.099 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Authors] AS [a]
+        WHERE ([a].[FirstName] = N'J.K.') AND ([a].[LastName] = N'Rowling')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.106 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Authors] AS [a]
+        WHERE ([a].[FirstName] = N'J.K.') AND ([a].[LastName] = N'Rowling')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.110 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.114 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.116 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.121 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.129 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.133 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2020-10-30 09:00:09.136 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.138 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.141 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookAuthors] AS [b]
+        WHERE ([b].[AuthorId] = CAST(1 AS bigint)) AND ([b].[BookId] = CAST(1 AS bigint))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.152 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookAuthors] AS [b]
+        WHERE ([b].[AuthorId] = CAST(1 AS bigint)) AND ([b].[BookId] = CAST(1 AS bigint))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.162 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.166 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.169 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.176 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.180 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.182 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2020-10-30 09:00:09.186 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.188 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.190 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookInventories] AS [b]
+        WHERE [b].[BookId] = CAST(1 AS bigint)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.202 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookInventories] AS [b]
+        WHERE [b].[BookId] = CAST(1 AS bigint)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.209 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.211 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.216 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.221 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.223 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.228 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2020-10-30 09:00:09.230 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.232 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.236 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookInventories] AS [b]
+        WHERE [b].[BookId] = CAST(2 AS bigint)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.243 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookInventories] AS [b]
+        WHERE [b].[BookId] = CAST(2 AS bigint)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.252 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.255 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.257 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.263 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.269 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.271 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-10-30 09:00:09.275 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.280 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.282 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanStatuses] AS [l]
+        WHERE [l].[Name] = N'Loaned') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.293 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanStatuses] AS [l]
+        WHERE [l].[Name] = N'Loaned') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.301 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.302 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.307 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.313 +01:00 [DBG] queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .Single()
+2020-10-30 09:00:09.320 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:09.322 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-10-30 09:00:09.327 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.331 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.334 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanStatuses] AS [l]
+        WHERE [l].[Name] = N'Returned') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.346 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanStatuses] AS [l]
+        WHERE [l].[Name] = N'Returned') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2020-10-30 09:00:09.352 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:09.354 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.359 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:09.366 +01:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2020-10-30 09:00:09.369 +01:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2020-10-30 09:00:09.375 +01:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2020-10-30 09:00:09.380 +01:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 0 entities written to the database.
+2020-10-30 09:00:09.384 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:00:09.392 +01:00 [DBG] Hosting starting
+2020-10-30 09:00:09.754 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-10-30 09:00:09.828 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F6EAED292B657F0361AE8ED4C2321B3446AFAB26)
+2020-10-30 09:00:09.894 +01:00 [INF] Now listening on: https://localhost:5001
+2020-10-30 09:00:09.897 +01:00 [INF] Now listening on: http://localhost:5000
+2020-10-30 09:00:09.900 +01:00 [DBG] Loaded hosting startup assembly LibraryApp.Api
+2020-10-30 09:00:09.904 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-30 09:00:09.907 +01:00 [INF] Hosting environment: Development
+2020-10-30 09:00:09.910 +01:00 [INF] Content root path: C:\Microblink\LibraryApp\LibraryApp.Api
+2020-10-30 09:00:09.915 +01:00 [DBG] Hosting started
+2020-10-30 09:00:10.037 +01:00 [DBG] Connection id "0HM3SL79C9V18" received FIN.
+2020-10-30 09:00:10.037 +01:00 [DBG] Connection id "0HM3SL79C9V19" received FIN.
+2020-10-30 09:00:10.068 +01:00 [DBG] Connection id "0HM3SL79C9V18" accepted.
+2020-10-30 09:00:10.068 +01:00 [DBG] Connection id "0HM3SL79C9V19" accepted.
+2020-10-30 09:00:10.071 +01:00 [DBG] Connection id "0HM3SL79C9V18" started.
+2020-10-30 09:00:10.073 +01:00 [DBG] Connection id "0HM3SL79C9V19" started.
+2020-10-30 09:00:10.121 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-10-30 09:00:10.121 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-10-30 09:00:10.177 +01:00 [DBG] Connection id "0HM3SL79C9V1A" accepted.
+2020-10-30 09:00:10.232 +01:00 [DBG] Connection id "0HM3SL79C9V19" stopped.
+2020-10-30 09:00:10.239 +01:00 [DBG] Connection id "0HM3SL79C9V18" stopped.
+2020-10-30 09:00:10.241 +01:00 [DBG] Connection id "0HM3SL79C9V1A" started.
+2020-10-30 09:00:10.256 +01:00 [DBG] Connection id "0HM3SL79C9V18" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-10-30 09:00:10.256 +01:00 [DBG] Connection id "0HM3SL79C9V19" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-10-30 09:00:10.334 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-10-30 09:00:10.341 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-10-30 09:00:10.348 +01:00 [VRB] Connection id "0HM3SL79C9V1A" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-10-30 09:00:10.351 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-10-30 09:00:10.355 +01:00 [VRB] Connection id "0HM3SL79C9V1A" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-10-30 09:00:10.358 +01:00 [VRB] Connection id "0HM3SL79C9V1A" received "HEADERS" frame for stream ID 1 with length 359 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-10-30 09:00:10.385 +01:00 [VRB] Connection id "0HM3SL79C9V1A" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-10-30 09:00:10.401 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast  
+2020-10-30 09:00:10.405 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-10-30 09:00:10.406 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:00:10.458 +01:00 [DBG] 1 candidate(s) found for the request path '/weatherforecast'
+2020-10-30 09:00:10.462 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
+2020-10-30 09:00:10.467 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api)'
+2020-10-30 09:00:10.479 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api)'
+2020-10-30 09:00:10.493 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-10-30 09:00:10.531 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[LibraryApp.Api.WeatherForecast] Get() on controller LibraryApp.Api.Controllers.WeatherForecastController (LibraryApp.Api).
+2020-10-30 09:00:10.536 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:00:10.537 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:00:10.539 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:00:10.547 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:00:10.549 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:00:10.554 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.WeatherForecastController (LibraryApp.Api)
+2020-10-30 09:00:10.558 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.WeatherForecastController (LibraryApp.Api)
+2020-10-30 09:00:10.563 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:10.568 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:10.574 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:10.587 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:10.606 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:00:10.626 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.6703ms.
+2020-10-30 09:00:10.637 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:10.646 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:10.654 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:10.665 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:10.682 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:10.688 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:10.700 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-10-30 09:00:10.708 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:00:10.721 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:00:10.724 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:00:10.728 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:00:10.734 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:00:10.738 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Api.WeatherForecast[]'.
+2020-10-30 09:00:10.998 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "HEADERS" frame for stream ID 1 with length 119 and flags "END_HEADERS"
+2020-10-30 09:00:11.003 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "DATA" frame for stream ID 1 with length 507 and flags "NONE"
+2020-10-30 09:00:11.006 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-10-30 09:00:11.009 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:11.022 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:11.040 +01:00 [INF] Executed action LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api) in 478.9696ms
+2020-10-30 09:00:11.044 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.WeatherForecastController.Get (LibraryApp.Api)'
+2020-10-30 09:00:11.050 +01:00 [INF] HTTP GET /weatherforecast responded 200 in 632.0709 ms
+2020-10-30 09:00:11.054 +01:00 [VRB] Connection id "0HM3SL79C9V1A" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM"
+2020-10-30 09:00:11.066 +01:00 [INF] Request finished in 667.6063ms 200 application/json; charset=utf-8
+2020-10-30 09:00:19.296 +01:00 [DBG] Connection id "0HM3SL79C9V1A" received FIN.
+2020-10-30 09:00:19.299 +01:00 [DBG] Connection id "0HM3SL79C9V1A" is closed. The last processed stream ID was 1.
+2020-10-30 09:00:19.303 +01:00 [DBG] Connection id "0HM3SL79C9V1A" sending FIN because: "The client closed the connection."
+2020-10-30 09:00:19.310 +01:00 [DBG] Connection id "0HM3SL79C9V1A" stopped.
+2020-10-30 09:00:48.216 +01:00 [DBG] Connection id "0HM3SL79C9V1B" accepted.
+2020-10-30 09:00:48.223 +01:00 [DBG] Connection id "0HM3SL79C9V1B" received FIN.
+2020-10-30 09:00:48.228 +01:00 [DBG] Connection id "0HM3SL79C9V1B" started.
+2020-10-30 09:00:48.230 +01:00 [DBG] Connection id "0HM3SL79C9V1C" accepted.
+2020-10-30 09:00:48.241 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-10-30 09:00:48.241 +01:00 [DBG] Connection id "0HM3SL79C9V1C" started.
+2020-10-30 09:00:48.270 +01:00 [DBG] Connection id "0HM3SL79C9V1B" stopped.
+2020-10-30 09:00:48.277 +01:00 [DBG] Connection id "0HM3SL79C9V1B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-10-30 09:00:48.306 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/returnLoan/1  
+2020-10-30 09:00:48.308 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:00:48.315 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/returnLoan/1'
+2020-10-30 09:00:48.320 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)' with route pattern 'api/Loan/returnLoan/{loanId}' is valid for the request path '/api/Loan/returnLoan/1'
+2020-10-30 09:00:48.328 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:48.332 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:48.387 +01:00 [INF] Route matched with {action = "ReturnLoan", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnLoan(Int64) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:00:48.395 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:00:48.401 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:00:48.410 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:00:48.420 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:00:48.425 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:00:48.433 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:48.447 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:00:48.457 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:48.475 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:48.487 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' using the name 'loanId' in request data ...
+2020-10-30 09:00:48.494 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:48.499 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:48.505 +01:00 [DBG] Attempting to validate the bound parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:48.515 +01:00 [DBG] Done attempting to validate the bound parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:48.525 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:48.532 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:48.543 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:48.552 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:48.561 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:00:48.567 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) with arguments (["1"])
+2020-10-30 09:00:48.664 +01:00 [DBG] queryContext => new QueryingEnumerable<Loan>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Loan>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+    .SingleOrDefault()
+2020-10-30 09:00:48.677 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:48.680 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2020-10-30 09:00:48.694 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:48.699 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:48.714 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:48.824 +01:00 [INF] Executed DbCommand (120ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:48.845 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:48.847 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:48.853 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:48.866 +01:00 [INF] NotFound30/10/2020 08:00:48
+2020-10-30 09:00:48.872 +01:00 [DBG] ResourceManagerStringLocalizer searched for 'Specific loan not found' in 'LibraryApp.Infrastructure.Localization.LocalizationResources' with culture 'en-GB'.
+2020-10-30 09:00:48.885 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 310.8892ms.
+2020-10-30 09:00:48.894 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:48.906 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:48.915 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:48.928 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:48.947 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:48.958 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:48.965 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:48.971 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:00:48.981 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:00:48.986 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:00:48.990 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:00:48.992 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:00:48.998 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:00:49.023 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:49.026 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:49.030 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:49.035 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) in 602.5434ms
+2020-10-30 09:00:49.040 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:49.043 +01:00 [INF] HTTP GET /api/Loan/returnLoan/1 responded 404 in 731.1417 ms
+2020-10-30 09:00:49.048 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:00:49.051 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:00:49.056 +01:00 [INF] Request finished in 750.7118ms 404 application/json; charset=utf-8
+2020-10-30 09:00:54.464 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/returnLoan/2  
+2020-10-30 09:00:54.466 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:00:54.471 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/returnLoan/2'
+2020-10-30 09:00:54.473 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)' with route pattern 'api/Loan/returnLoan/{loanId}' is valid for the request path '/api/Loan/returnLoan/2'
+2020-10-30 09:00:54.477 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:54.481 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:54.483 +01:00 [INF] Route matched with {action = "ReturnLoan", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnLoan(Int64) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:00:54.491 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:00:54.493 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:00:54.496 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:00:54.501 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:00:54.505 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:00:54.509 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:54.549 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:00:54.554 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:54.555 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:54.557 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' using the name 'loanId' in request data ...
+2020-10-30 09:00:54.560 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:54.562 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:54.566 +01:00 [DBG] Attempting to validate the bound parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:54.570 +01:00 [DBG] Done attempting to validate the bound parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:54.573 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:54.576 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:54.580 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:54.586 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:54.592 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:00:54.604 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) with arguments (["2"])
+2020-10-30 09:00:54.630 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:54.635 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2020-10-30 09:00:54.643 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:54.649 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:54.657 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:54.676 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:54.691 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:54.697 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:54.702 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:54.709 +01:00 [INF] NotFound30/10/2020 08:00:54
+2020-10-30 09:00:54.712 +01:00 [DBG] ResourceManagerStringLocalizer searched for 'Specific loan not found' in 'LibraryApp.Infrastructure.Localization.LocalizationResources' with culture 'en-GB'.
+2020-10-30 09:00:54.722 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 107.0146ms.
+2020-10-30 09:00:54.729 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:54.738 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:54.744 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:54.754 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:54.763 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:54.770 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:54.776 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:54.780 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:00:54.789 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:00:54.791 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:00:54.795 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:00:54.798 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:00:54.803 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:00:54.807 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:54.809 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:54.813 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:54.824 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) in 314.7918ms
+2020-10-30 09:00:54.832 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:54.836 +01:00 [INF] HTTP GET /api/Loan/returnLoan/2 responded 404 in 367.5494 ms
+2020-10-30 09:00:54.842 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:00:54.845 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:00:54.848 +01:00 [INF] Request finished in 383.732ms 404 application/json; charset=utf-8
+2020-10-30 09:00:58.673 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/returnLoan/3  
+2020-10-30 09:00:58.675 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:00:58.677 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/returnLoan/3'
+2020-10-30 09:00:58.679 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)' with route pattern 'api/Loan/returnLoan/{loanId}' is valid for the request path '/api/Loan/returnLoan/3'
+2020-10-30 09:00:58.685 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:58.687 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:58.690 +01:00 [INF] Route matched with {action = "ReturnLoan", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnLoan(Int64) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:00:58.699 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:00:58.702 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:00:58.707 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:00:58.713 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:00:58.718 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:00:58.726 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:58.738 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:00:58.750 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:00:58.756 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:58.761 +01:00 [DBG] Attempting to bind parameter 'loanId' of type 'System.Int64' using the name 'loanId' in request data ...
+2020-10-30 09:00:58.766 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:58.770 +01:00 [DBG] Done attempting to bind parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:58.772 +01:00 [DBG] Attempting to validate the bound parameter 'loanId' of type 'System.Int64' ...
+2020-10-30 09:00:58.775 +01:00 [DBG] Done attempting to validate the bound parameter 'loanId' of type 'System.Int64'.
+2020-10-30 09:00:58.782 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:58.787 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:58.791 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:58.794 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:58.804 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:00:58.811 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) with arguments (["3"])
+2020-10-30 09:00:58.826 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:00:58.830 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2020-10-30 09:00:58.835 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:58.842 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:58.846 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:58.862 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2020-10-30 09:00:58.875 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:00:58.880 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:58.887 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:00:58.891 +01:00 [INF] NotFound30/10/2020 08:00:58
+2020-10-30 09:00:58.896 +01:00 [DBG] ResourceManagerStringLocalizer searched for 'Specific loan not found' in 'LibraryApp.Infrastructure.Localization.LocalizationResources' with culture 'en-GB'.
+2020-10-30 09:00:58.905 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 82.345ms.
+2020-10-30 09:00:58.911 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:58.921 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:00:58.931 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:58.942 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:00:58.953 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:58.962 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:58.974 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:58.981 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:00:58.995 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:00:59.001 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:00:59.007 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:00:59.012 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:00:59.018 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:00:59.027 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2020-10-30 09:00:59.031 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:59.042 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:00:59.053 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api) in 326.4513ms
+2020-10-30 09:00:59.060 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.ReturnLoan (LibraryApp.Api)'
+2020-10-30 09:00:59.064 +01:00 [INF] HTTP GET /api/Loan/returnLoan/3 responded 404 in 386.9891 ms
+2020-10-30 09:00:59.073 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:00:59.079 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:00:59.084 +01:00 [INF] Request finished in 411.1454ms 404 application/json; charset=utf-8
+2020-10-30 09:03:45.495 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/3  
+2020-10-30 09:03:45.496 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:03:45.500 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/3'
+2020-10-30 09:03:45.506 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)' with route pattern 'api/Loan/{userId}' is valid for the request path '/api/Loan/3'
+2020-10-30 09:03:45.510 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:45.513 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:45.524 +01:00 [INF] Route matched with {action = "GetLoansForUser", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansForUser(Int64) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:03:45.530 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:03:45.534 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:03:45.538 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:03:45.541 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:03:45.545 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:03:45.548 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:03:45.552 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:03:45.557 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:03:45.561 +01:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' ...
+2020-10-30 09:03:45.564 +01:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' using the name 'userId' in request data ...
+2020-10-30 09:03:45.566 +01:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:45.570 +01:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:45.572 +01:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int64' ...
+2020-10-30 09:03:45.575 +01:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:45.577 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:45.580 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:45.587 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:45.589 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:45.592 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:03:45.596 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) with arguments (["3"])
+2020-10-30 09:03:45.776 +01:00 [DBG] queryContext => new QueryingEnumerable<Loan>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Loan>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+2020-10-30 09:03:45.784 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:03:45.790 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2020-10-30 09:03:45.793 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:45.797 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:45.801 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t].[BookId], [t].[LoanId], [t].[Quantity], [t].[Id], [t].[IsActive], [t].[IsDeleted], [t].[LibraryId], [t].[Title], [t].[YearPublished]
+FROM [Loans] AS [l]
+INNER JOIN [Users] AS [u] ON [l].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [l].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t] ON [l].[Id] = [t].[LoanId]
+WHERE (([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))) AND ([l].[UserId] = @__userId_0)
+ORDER BY [l].[Id], [u].[Id], [l0].[Id], [t].[BookId], [t].[LoanId], [t].[Id]
+2020-10-30 09:03:45.877 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t].[BookId], [t].[LoanId], [t].[Quantity], [t].[Id], [t].[IsActive], [t].[IsDeleted], [t].[LibraryId], [t].[Title], [t].[YearPublished]
+FROM [Loans] AS [l]
+INNER JOIN [Users] AS [u] ON [l].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [l].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t] ON [l].[Id] = [t].[LoanId]
+WHERE (([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))) AND ([l].[UserId] = @__userId_0)
+ORDER BY [l].[Id], [u].[Id], [l0].[Id], [t].[BookId], [t].[LoanId], [t].[Id]
+2020-10-30 09:03:45.898 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:03:45.906 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:45.911 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:45.919 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 318.5044ms.
+2020-10-30 09:03:45.926 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:45.937 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:45.945 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:45.951 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:45.960 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:45.970 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:45.978 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:03:45.983 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:03:45.997 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:03:45.999 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:03:46.006 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:03:46.009 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:03:46.014 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:03:46.033 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:03:46.037 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:46.044 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:46.053 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) in 504.9905ms
+2020-10-30 09:03:46.060 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:46.064 +01:00 [INF] HTTP GET /api/Loan/3 responded 200 in 565.8190 ms
+2020-10-30 09:03:46.070 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:03:46.074 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:03:46.079 +01:00 [INF] Request finished in 584.4423ms 200 application/json; charset=utf-8
+2020-10-30 09:03:51.490 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/1  
+2020-10-30 09:03:51.498 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:03:51.502 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/1'
+2020-10-30 09:03:51.507 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)' with route pattern 'api/Loan/{userId}' is valid for the request path '/api/Loan/1'
+2020-10-30 09:03:51.522 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:51.525 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:51.529 +01:00 [INF] Route matched with {action = "GetLoansForUser", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoansForUser(Int64) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:03:51.535 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:03:51.540 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:03:51.543 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:03:51.551 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:03:51.554 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:03:51.559 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:03:51.564 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:03:51.570 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:03:51.574 +01:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' ...
+2020-10-30 09:03:51.576 +01:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int64' using the name 'userId' in request data ...
+2020-10-30 09:03:51.579 +01:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:51.582 +01:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:51.585 +01:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int64' ...
+2020-10-30 09:03:51.588 +01:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int64'.
+2020-10-30 09:03:51.590 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:51.593 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:51.597 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:51.601 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:51.604 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:03:51.607 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) with arguments (["1"])
+2020-10-30 09:03:51.616 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:03:51.618 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2020-10-30 09:03:51.620 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:51.623 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:51.626 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t].[BookId], [t].[LoanId], [t].[Quantity], [t].[Id], [t].[IsActive], [t].[IsDeleted], [t].[LibraryId], [t].[Title], [t].[YearPublished]
+FROM [Loans] AS [l]
+INNER JOIN [Users] AS [u] ON [l].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [l].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t] ON [l].[Id] = [t].[LoanId]
+WHERE (([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))) AND ([l].[UserId] = @__userId_0)
+ORDER BY [l].[Id], [u].[Id], [l0].[Id], [t].[BookId], [t].[LoanId], [t].[Id]
+2020-10-30 09:03:51.666 +01:00 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t].[BookId], [t].[LoanId], [t].[Quantity], [t].[Id], [t].[IsActive], [t].[IsDeleted], [t].[LibraryId], [t].[Title], [t].[YearPublished]
+FROM [Loans] AS [l]
+INNER JOIN [Users] AS [u] ON [l].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [l].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t] ON [l].[Id] = [t].[LoanId]
+WHERE (([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))) AND ([l].[UserId] = @__userId_0)
+ORDER BY [l].[Id], [u].[Id], [l0].[Id], [t].[BookId], [t].[LoanId], [t].[Id]
+2020-10-30 09:03:51.698 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:03:51.703 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:51.709 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:03:51.717 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 104.6429ms.
+2020-10-30 09:03:51.729 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:51.738 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:03:51.747 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:51.766 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:03:51.778 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:51.784 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:51.794 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:03:51.803 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:03:51.817 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:03:51.822 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:03:51.826 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:03:51.831 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:03:51.841 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:03:51.846 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:03:51.852 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:51.859 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:03:51.870 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api) in 311.4957ms
+2020-10-30 09:03:51.876 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoansForUser (LibraryApp.Api)'
+2020-10-30 09:03:51.880 +01:00 [INF] HTTP GET /api/Loan/1 responded 200 in 377.6463 ms
+2020-10-30 09:03:51.893 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:03:51.897 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:03:51.904 +01:00 [INF] Request finished in 414.5845ms 200 application/json; charset=utf-8
+2020-10-30 09:04:45.393 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/  
+2020-10-30 09:04:45.395 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:04:45.398 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/'
+2020-10-30 09:04:45.400 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)' with route pattern 'api/Loan' is valid for the request path '/api/Loan/'
+2020-10-30 09:04:45.414 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:04:45.418 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:04:45.443 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoans(LibraryApp.Core.RequestModels.LoanRequest.LoanParams) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:04:45.450 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:04:45.455 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:04:45.460 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:04:45.468 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:04:45.472 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:04:45.479 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:04:45.488 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:04:45.493 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:04:45.498 +01:00 [DBG] Attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' ...
+2020-10-30 09:04:45.504 +01:00 [DBG] Attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' using the name '' in request data ...
+2020-10-30 09:04:45.523 +01:00 [DBG] Could not find a value in the request with name 'UserId' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.UserId' of type 'System.Int64'.
+2020-10-30 09:04:45.532 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.UserId' of type 'System.Int64'.
+2020-10-30 09:04:45.544 +01:00 [DBG] Could not find a value in the request with name 'PageNumber' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:04:45.555 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:04:45.566 +01:00 [DBG] Could not find a value in the request with name 'PageSize' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:04:45.579 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:04:45.593 +01:00 [DBG] Done attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:04:45.601 +01:00 [DBG] Done attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:04:45.611 +01:00 [DBG] Attempting to validate the bound parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' ...
+2020-10-30 09:04:45.625 +01:00 [DBG] Done attempting to validate the bound parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:04:45.632 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:04:45.642 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:04:45.651 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:04:45.661 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:04:45.671 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:04:45.682 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) with arguments (["LibraryApp.Core.RequestModels.LoanRequest.LoanParams"])
+2020-10-30 09:04:45.735 +01:00 [DBG] queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new QueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, int>, 
+        LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken)
+2020-10-30 09:04:45.772 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:04:45.776 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2020-10-30 09:04:45.787 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:45.796 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:45.800 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Loans] AS [l]
+WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:04:45.848 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Loans] AS [l]
+WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:04:45.881 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:04:45.889 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:45.899 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:45.971 +01:00 [DBG] queryContext => new QueryingEnumerable<Loan>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Loan>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+2020-10-30 09:04:45.997 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:04:46.000 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2020-10-30 09:04:46.012 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:46.017 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:46.066 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateDue], [t].[DateLoaned], [t].[DateReturned], [t].[IsActive], [t].[IsDeleted], [t].[LoanStatusId], [t].[Overdue], [t].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t0].[BookId], [t0].[LoanId], [t0].[Quantity], [t0].[Id], [t0].[IsActive], [t0].[IsDeleted], [t0].[LibraryId], [t0].[Title], [t0].[YearPublished]
+FROM (
+    SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+    FROM [Loans] AS [l]
+    WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [t].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[LoanId]
+ORDER BY [t].[Id], [u].[Id], [l0].[Id], [t0].[BookId], [t0].[LoanId], [t0].[Id]
+2020-10-30 09:04:46.119 +01:00 [INF] Executed DbCommand (53ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateDue], [t].[DateLoaned], [t].[DateReturned], [t].[IsActive], [t].[IsDeleted], [t].[LoanStatusId], [t].[Overdue], [t].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t0].[BookId], [t0].[LoanId], [t0].[Quantity], [t0].[Id], [t0].[IsActive], [t0].[IsDeleted], [t0].[LibraryId], [t0].[Title], [t0].[YearPublished]
+FROM (
+    SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+    FROM [Loans] AS [l]
+    WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [t].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[LoanId]
+ORDER BY [t].[Id], [u].[Id], [l0].[Id], [t0].[BookId], [t0].[LoanId], [t0].[Id]
+2020-10-30 09:04:46.137 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:04:46.139 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:46.146 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:04:46.182 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 486.3453ms.
+2020-10-30 09:04:46.191 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:04:46.199 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:04:46.213 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:04:46.221 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:04:46.235 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:04:46.244 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:04:46.254 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:04:46.263 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:04:46.275 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:04:46.278 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:04:46.286 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:04:46.295 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:04:46.303 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Api.ApiHelpers.Pagination.PagedList`1[[LibraryApp.Model.Domain.Loan, LibraryApp.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-30 09:04:46.320 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:04:46.324 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:04:46.329 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:04:46.336 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) in 856.3437ms
+2020-10-30 09:04:46.339 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:04:46.343 +01:00 [INF] HTTP GET /api/Loan/ responded 200 in 945.7494 ms
+2020-10-30 09:04:46.348 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:04:46.350 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:04:46.352 +01:00 [INF] Request finished in 959.2011ms 200 application/json; charset=utf-8
+2020-10-30 09:06:11.127 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Loan/  
+2020-10-30 09:06:11.129 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:06:11.131 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Loan/'
+2020-10-30 09:06:11.133 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)' with route pattern 'api/Loan' is valid for the request path '/api/Loan/'
+2020-10-30 09:06:11.136 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:06:11.142 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:06:11.144 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLoans(LibraryApp.Core.RequestModels.LoanRequest.LoanParams) on controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api).
+2020-10-30 09:06:11.151 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:06:11.155 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:06:11.158 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:06:11.166 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:06:11.169 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:06:11.174 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:06:11.182 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:06:11.186 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.LoanController (LibraryApp.Api)
+2020-10-30 09:06:11.192 +01:00 [DBG] Attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' ...
+2020-10-30 09:06:11.196 +01:00 [DBG] Attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' using the name '' in request data ...
+2020-10-30 09:06:11.202 +01:00 [DBG] Could not find a value in the request with name 'UserId' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.UserId' of type 'System.Int64'.
+2020-10-30 09:06:11.206 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.UserId' of type 'System.Int64'.
+2020-10-30 09:06:11.214 +01:00 [DBG] Could not find a value in the request with name 'PageNumber' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:06:11.223 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:06:11.228 +01:00 [DBG] Could not find a value in the request with name 'PageSize' for binding property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:06:11.238 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:06:11.248 +01:00 [DBG] Done attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:06:11.258 +01:00 [DBG] Done attempting to bind parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:06:11.272 +01:00 [DBG] Attempting to validate the bound parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams' ...
+2020-10-30 09:06:11.281 +01:00 [DBG] Done attempting to validate the bound parameter 'loanParams' of type 'LibraryApp.Core.RequestModels.LoanRequest.LoanParams'.
+2020-10-30 09:06:11.292 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:11.301 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:11.312 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:11.325 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:11.333 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:06:11.343 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) with arguments (["LibraryApp.Core.RequestModels.LoanRequest.LoanParams"])
+2020-10-30 09:06:11.357 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:06:11.363 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2020-10-30 09:06:11.367 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.374 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.381 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Loans] AS [l]
+WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:06:11.404 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Loans] AS [l]
+WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:06:11.416 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:06:11.419 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.426 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.432 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:06:11.438 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2020-10-30 09:06:11.444 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.451 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.458 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateDue], [t].[DateLoaned], [t].[DateReturned], [t].[IsActive], [t].[IsDeleted], [t].[LoanStatusId], [t].[Overdue], [t].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t0].[BookId], [t0].[LoanId], [t0].[Quantity], [t0].[Id], [t0].[IsActive], [t0].[IsDeleted], [t0].[LibraryId], [t0].[Title], [t0].[YearPublished]
+FROM (
+    SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+    FROM [Loans] AS [l]
+    WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [t].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[LoanId]
+ORDER BY [t].[Id], [u].[Id], [l0].[Id], [t0].[BookId], [t0].[LoanId], [t0].[Id]
+2020-10-30 09:06:11.522 +01:00 [INF] Executed DbCommand (64ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateDue], [t].[DateLoaned], [t].[DateReturned], [t].[IsActive], [t].[IsDeleted], [t].[LoanStatusId], [t].[Overdue], [t].[UserId], [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue], [l0].[Id], [l0].[IsActive], [l0].[IsDeleted], [l0].[Name], [t0].[BookId], [t0].[LoanId], [t0].[Quantity], [t0].[Id], [t0].[IsActive], [t0].[IsDeleted], [t0].[LibraryId], [t0].[Title], [t0].[YearPublished]
+FROM (
+    SELECT [l].[Id], [l].[DateDue], [l].[DateLoaned], [l].[DateReturned], [l].[IsActive], [l].[IsDeleted], [l].[LoanStatusId], [l].[Overdue], [l].[UserId]
+    FROM [Loans] AS [l]
+    WHERE ([l].[IsDeleted] <> CAST(1 AS bit)) AND ([l].[IsActive] = CAST(1 AS bit))
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Users] AS [u] ON [t].[UserId] = [u].[Id]
+INNER JOIN [LoanStatuses] AS [l0] ON [t].[LoanStatusId] = [l0].[Id]
+LEFT JOIN (
+    SELECT [b].[BookId], [b].[LoanId], [b].[Quantity], [b0].[Id], [b0].[IsActive], [b0].[IsDeleted], [b0].[LibraryId], [b0].[Title], [b0].[YearPublished]
+    FROM [BookLoans] AS [b]
+    INNER JOIN [Books] AS [b0] ON [b].[BookId] = [b0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[LoanId]
+ORDER BY [t].[Id], [u].[Id], [l0].[Id], [t0].[BookId], [t0].[LoanId], [t0].[Id]
+2020-10-30 09:06:11.550 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:06:11.554 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.563 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:11.570 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 217.739ms.
+2020-10-30 09:06:11.578 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:11.587 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:11.599 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:11.608 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:11.616 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:11.627 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:11.636 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:06:11.641 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:06:11.657 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:06:11.661 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:06:11.668 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:06:11.671 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:06:11.679 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Api.ApiHelpers.Pagination.PagedList`1[[LibraryApp.Model.Domain.Loan, LibraryApp.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-30 09:06:11.685 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:06:11.689 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:11.696 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:11.701 +01:00 [INF] Executed action LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api) in 527.4042ms
+2020-10-30 09:06:11.706 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.LoanController.GetLoans (LibraryApp.Api)'
+2020-10-30 09:06:11.710 +01:00 [INF] HTTP GET /api/Loan/ responded 200 in 579.3282 ms
+2020-10-30 09:06:11.714 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:06:11.716 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:06:11.719 +01:00 [INF] Request finished in 591.7029ms 200 application/json; charset=utf-8
+2020-10-30 09:06:27.676 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Book/  
+2020-10-30 09:06:27.689 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:06:27.691 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Book/'
+2020-10-30 09:06:27.694 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api)' with route pattern 'api/Book' is valid for the request path '/api/Book/'
+2020-10-30 09:06:27.702 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api)'
+2020-10-30 09:06:27.707 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api)'
+2020-10-30 09:06:27.716 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooks() on controller LibraryApp.Api.Controllers.BookController (LibraryApp.Api).
+2020-10-30 09:06:27.725 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:06:27.727 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:06:27.731 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:06:27.737 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:06:27.740 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:06:27.744 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.BookController (LibraryApp.Api)
+2020-10-30 09:06:27.748 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:06:27.755 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.BookController (LibraryApp.Api)
+2020-10-30 09:06:27.757 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:27.761 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:27.767 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:27.772 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:27.776 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:06:27.787 +01:00 [DBG] queryContext => new QueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Book>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+2020-10-30 09:06:27.793 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:06:27.795 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2020-10-30 09:06:27.796 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:27.800 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:27.803 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[IsActive], [b].[IsDeleted], [b].[LibraryId], [b].[Title], [b].[YearPublished]
+FROM [Books] AS [b]
+WHERE ([b].[IsDeleted] <> CAST(1 AS bit)) AND ([b].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:06:27.813 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[IsActive], [b].[IsDeleted], [b].[LibraryId], [b].[Title], [b].[YearPublished]
+FROM [Books] AS [b]
+WHERE ([b].[IsDeleted] <> CAST(1 AS bit)) AND ([b].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:06:27.864 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:06:27.919 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:06:27.926 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:06:27.929 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:27.936 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:06:27.943 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 163.3126ms.
+2020-10-30 09:06:27.949 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:27.958 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:06:27.967 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:27.978 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:06:27.989 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:27.998 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:28.009 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:06:28.015 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:06:28.028 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:06:28.031 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:06:28.039 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:06:28.042 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:06:28.051 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Infrastructure.ApiModel.LibraryResponse'.
+2020-10-30 09:06:28.101 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:06:28.110 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:28.122 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:06:28.129 +01:00 [INF] Executed action LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api) in 384.68ms
+2020-10-30 09:06:28.134 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.BookController.GetBooks (LibraryApp.Api)'
+2020-10-30 09:06:28.139 +01:00 [INF] HTTP GET /api/Book/ responded 200 in 448.2786 ms
+2020-10-30 09:06:28.144 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:06:28.147 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:06:28.153 +01:00 [INF] Request finished in 477.2414ms 200 application/json; charset=utf-8
+2020-10-30 09:07:17.412 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/User/ application/json 
+2020-10-30 09:07:17.414 +01:00 [VRB] All hosts are allowed.
+2020-10-30 09:07:17.416 +01:00 [DBG] 1 candidate(s) found for the request path '/api/User/'
+2020-10-30 09:07:17.418 +01:00 [DBG] Endpoint 'LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api)' with route pattern 'api/User' is valid for the request path '/api/User/'
+2020-10-30 09:07:17.425 +01:00 [DBG] Request matched endpoint 'LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api)'
+2020-10-30 09:07:17.430 +01:00 [INF] Executing endpoint 'LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api)'
+2020-10-30 09:07:17.450 +01:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers(LibraryApp.Core.RequestModels.User.UserParams) on controller LibraryApp.Api.Controllers.UserController (LibraryApp.Api).
+2020-10-30 09:07:17.458 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-10-30 09:07:17.463 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-10-30 09:07:17.466 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-10-30 09:07:17.473 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-10-30 09:07:17.476 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-10-30 09:07:17.480 +01:00 [DBG] Executing controller factory for controller LibraryApp.Api.Controllers.UserController (LibraryApp.Api)
+2020-10-30 09:07:17.485 +01:00 [INF] Entity Framework Core 3.1.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=LibraryApp.Infrastructure 
+2020-10-30 09:07:17.500 +01:00 [DBG] Executed controller factory for controller LibraryApp.Api.Controllers.UserController (LibraryApp.Api)
+2020-10-30 09:07:17.503 +01:00 [DBG] Attempting to bind parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams' ...
+2020-10-30 09:07:17.506 +01:00 [DBG] Attempting to bind parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams' using the name '' in request data ...
+2020-10-30 09:07:17.510 +01:00 [DBG] Could not find a value in the request with name 'OrderBy' for binding property 'LibraryApp.Core.RequestModels.User.UserParams.OrderBy' of type 'System.String'.
+2020-10-30 09:07:17.515 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.User.UserParams.OrderBy' of type 'System.String'.
+2020-10-30 09:07:17.519 +01:00 [DBG] Could not find a value in the request with name 'SearchLastName' for binding property 'LibraryApp.Core.RequestModels.User.UserParams.SearchLastName' of type 'System.String'.
+2020-10-30 09:07:17.524 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.User.UserParams.SearchLastName' of type 'System.String'.
+2020-10-30 09:07:17.532 +01:00 [DBG] Could not find a value in the request with name 'PageNumber' for binding property 'LibraryApp.Core.RequestModels.User.UserParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:07:17.537 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.User.UserParams.PageNumber' of type 'System.Int32'.
+2020-10-30 09:07:17.542 +01:00 [DBG] Could not find a value in the request with name 'PageSize' for binding property 'LibraryApp.Core.RequestModels.User.UserParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:07:17.549 +01:00 [DBG] Done attempting to bind property 'LibraryApp.Core.RequestModels.User.UserParams.PageSize' of type 'System.Int32'.
+2020-10-30 09:07:17.552 +01:00 [DBG] Done attempting to bind parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams'.
+2020-10-30 09:07:17.556 +01:00 [DBG] Done attempting to bind parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams'.
+2020-10-30 09:07:17.558 +01:00 [DBG] Attempting to validate the bound parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams' ...
+2020-10-30 09:07:17.564 +01:00 [DBG] Done attempting to validate the bound parameter 'userParams' of type 'LibraryApp.Core.RequestModels.User.UserParams'.
+2020-10-30 09:07:17.567 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:07:17.571 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:07:17.574 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:07:17.578 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:07:17.582 +01:00 [INF] Executing action method LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api) - Validation state: "Valid"
+2020-10-30 09:07:17.589 +01:00 [VRB] Executing action method LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api) with arguments (["LibraryApp.Core.RequestModels.User.UserParams"])
+2020-10-30 09:07:17.646 +01:00 [DBG] queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new QueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, int>, 
+        LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken)
+2020-10-30 09:07:17.674 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:07:17.689 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (15ms).
+2020-10-30 09:07:17.708 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.728 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.745 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE ([u].[IsDeleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:07:17.784 +01:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE ([u].[IsDeleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = CAST(1 AS bit))
+2020-10-30 09:07:17.806 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:07:17.817 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.828 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.897 +01:00 [DBG] queryContext => new QueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, User>, 
+    LibraryApp.Infrastructure.Context.ApplicationDbContext, 
+    null
+)
+2020-10-30 09:07:17.904 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2020-10-30 09:07:17.912 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2020-10-30 09:07:17.917 +01:00 [DBG] Opening connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.924 +01:00 [DBG] Opened connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:17.933 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateOfBirth], [t].[FirstName], [t].[IsActive], [t].[IsDeleted], [t].[IsValid], [t].[LastName], [t].[TotalOverdue], [c].[Id], [c].[EmailAddress], [c].[IsActive], [c].[IsDeleted], [c].[MobileNumber], [c].[PhoneNumber], [c].[UserId]
+FROM (
+    SELECT [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue]
+    FROM [Users] AS [u]
+    WHERE ([u].[IsDeleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = CAST(1 AS bit))
+    ORDER BY [u].[LastName]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Contacts] AS [c] ON [t].[Id] = [c].[UserId]
+ORDER BY [t].[LastName], [t].[Id], [c].[Id]
+2020-10-30 09:07:17.980 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DateOfBirth], [t].[FirstName], [t].[IsActive], [t].[IsDeleted], [t].[IsValid], [t].[LastName], [t].[TotalOverdue], [c].[Id], [c].[EmailAddress], [c].[IsActive], [c].[IsDeleted], [c].[MobileNumber], [c].[PhoneNumber], [c].[UserId]
+FROM (
+    SELECT [u].[Id], [u].[DateOfBirth], [u].[FirstName], [u].[IsActive], [u].[IsDeleted], [u].[IsValid], [u].[LastName], [u].[TotalOverdue]
+    FROM [Users] AS [u]
+    WHERE ([u].[IsDeleted] <> CAST(1 AS bit)) AND ([u].[IsActive] = CAST(1 AS bit))
+    ORDER BY [u].[LastName]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Contacts] AS [c] ON [t].[Id] = [c].[UserId]
+ORDER BY [t].[LastName], [t].[Id], [c].[Id]
+2020-10-30 09:07:18.014 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.047 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.085 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.094 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.113 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.119 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.128 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.135 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.145 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.152 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.163 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.170 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.178 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.187 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.198 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.207 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.218 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.229 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.237 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.248 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.259 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.270 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-10-30 09:07:18.281 +01:00 [DBG] A data reader was disposed.
+2020-10-30 09:07:18.288 +01:00 [DBG] Closing connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:18.292 +01:00 [DBG] Closed connection to database 'LibraryApp' on server 'localhost\SQLEXPRESS'.
+2020-10-30 09:07:18.305 +01:00 [INF] Executed action method LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 706.682ms.
+2020-10-30 09:07:18.319 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:07:18.327 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-10-30 09:07:18.337 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:07:18.347 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-10-30 09:07:18.355 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:07:18.364 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:07:18.373 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:07:18.380 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2020-10-30 09:07:18.391 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-10-30 09:07:18.396 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-10-30 09:07:18.400 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-10-30 09:07:18.402 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-10-30 09:07:18.412 +01:00 [INF] Executing ObjectResult, writing value of type 'LibraryApp.Api.ApiHelpers.Pagination.PagedList`1[[LibraryApp.Model.Domain.User, LibraryApp.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-30 09:07:18.442 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2020-10-30 09:07:18.444 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:07:18.447 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-10-30 09:07:18.451 +01:00 [INF] Executed action LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api) in 970.7059ms
+2020-10-30 09:07:18.454 +01:00 [INF] Executed endpoint 'LibraryApp.Api.Controllers.UserController.GetAllUsers (LibraryApp.Api)'
+2020-10-30 09:07:18.457 +01:00 [INF] HTTP GET /api/User/ responded 200 in 1041.3144 ms
+2020-10-30 09:07:18.461 +01:00 [DBG] Connection id "0HM3SL79C9V1C" completed keep alive response.
+2020-10-30 09:07:18.464 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2020-10-30 09:07:18.467 +01:00 [INF] Request finished in 1054.2624ms 200 application/json; charset=utf-8

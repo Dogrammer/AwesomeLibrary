@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
+using Serilog;
 
 namespace LibraryApp.Api.Controllers
 {
@@ -64,7 +65,6 @@ namespace LibraryApp.Api.Controllers
             var loans = await PagedList<Loan>.CreateAsync(loansQuery, loanParams.PageNumber, loanParams.PageSize);
             Response.AddPaginationHeader(loans.CurrentPage, loans.PageSize, loans.TotalCount, loans.TotalPages);
 
-            //return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK, loans));
             return Ok(loans);
         }
 
@@ -127,7 +127,7 @@ namespace LibraryApp.Api.Controllers
                 return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.BooksAreNotAvailable]));
 
             }
-
+            Log.Information("BadRequest" + DateTime.UtcNow.ToString());
             return BadRequest(LibraryResponse.CreateResponse(HttpStatusCode.BadRequest));
 
         }
@@ -164,6 +164,7 @@ namespace LibraryApp.Api.Controllers
                 return Ok(LibraryResponse.CreateResponse(HttpStatusCode.OK));
             }
 
+            Log.Information("NotFound" + DateTime.UtcNow.ToString());
             return NotFound(LibraryResponse.CreateResponse(HttpStatusCode.NotFound, _localizer[LocalizationResources.SpecificLoanNotFound]));
         }
 
